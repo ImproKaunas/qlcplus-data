@@ -52,7 +52,7 @@
   <Capability Min="220" Max="239" Preset="ColorWheelIndex">Color 11</Capability>
   <Capability Min="240" Max="255" Preset="ColorWheelIndex">Color 12</Capability>
  </Channel>
- <Mode Name="8CH mode">
+ <Mode Name="8 Channel">
   <Channel Number="0" ActsOn="0">Master dimmer</Channel>
   <Channel Number="1" ActsOn="1">Strobe</Channel>
   <Channel Number="2" ActsOn="2">Red</Channel>
@@ -62,7 +62,7 @@
   <Channel Number="6" ActsOn="6">Macro</Channel>
   <Channel Number="7" ActsOn="7">Color change</Channel>
  </Mode>
- <Mode Name="6CH mode">
+ <Mode Name="6 Channel">
   <Channel Number="0" ActsOn="0">Master dimmer</Channel>
   <Channel Number="1" ActsOn="1">Strobe</Channel>
   <Channel Number="2" ActsOn="2">Red</Channel>
