@@ -36,7 +36,7 @@
   <Capability Min="220" Max="239" Preset="ColorWheelIndex">Color 7</Capability>
   <Capability Min="240" Max="255">Sound Mode</Capability>
  </Channel>
- <Channel Name="Color change">
+ <Channel Name="Color">
   <Group Byte="0">Colour</Group>
   <Capability Min="0" Max="19">No Function</Capability>
   <Capability Min="20" Max="39" Preset="ColorWheelIndex">Color 1</Capability>
@@ -60,7 +60,7 @@
   <Channel Number="4" ActsOn="4">Blue</Channel>
   <Channel Number="5" ActsOn="5">White</Channel>
   <Channel Number="6" ActsOn="6">Macro</Channel>
-  <Channel Number="7" ActsOn="7">Color change</Channel>
+  <Channel Number="7" ActsOn="7">Color</Channel>
  </Mode>
  <Mode Name="6 Channel">
   <Channel Number="0" ActsOn="0">Master dimmer</Channel>
