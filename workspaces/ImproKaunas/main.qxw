@@ -3,11 +3,12 @@
 <Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.13.0 GIT</Version>
+  <Version>4.13.1</Version>
   <Author>Chionsas</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
+   <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Impro Kaunas" ID="0" Passthrough="True">
     <Input Plugin="E1.31" Line="0">
      <PluginParameters multicast="0" ucastPort="5568" universe="1"/>
@@ -133,7 +134,7 @@
   <ChannelsGroup ID="5" Name="White" Value="0">0,5,1,5,2,5,3,5,4,5,5,5,6,5,7,5</ChannelsGroup>
   <ChannelsGroup ID="6" Name="Macro" Value="0">0,6,1,6,2,6,3,6,4,6,5,6,6,6,7,6</ChannelsGroup>
   <ChannelsGroup ID="7" Name="Color" Value="0">0,7,1,7,2,7,3,7,4,7,5,7,6,7,7,7</ChannelsGroup>
-  <Function ID="0" Type="RGBMatrix" Name="Color effect: Police (vertical)">
+  <Function ID="0" Type="RGBMatrix" Name="Color effect: Red &amp; Blue (vertical)">
    <Speed FadeIn="200" FadeOut="200" Duration="400"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
@@ -141,21 +142,44 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Red"/>
+   <Property Name="color2Index" Value="Electric Blue"/>
    <Property Name="blockSize" Value="1"/>
    <Property Name="orientation" Value="Vertical"/>
-   <Property Name="color2Index" Value="Electric Blue"/>
+   <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="1" Type="RGBMatrix" Name="Color effect: Ocean">
-   <Speed FadeIn="100" FadeOut="100" Duration="100"/>
+   <Speed FadeIn="125" FadeOut="125" Duration="125"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="presetSize" Value="8"/>
    <Property Name="presetIndex" Value="Ocean"/>
-   <Property Name="presetSize" Value="5"/>
+  </Function>
+  <Function ID="2" Type="Scene" Name="Color: Max White">
+   <Speed FadeIn="2500" FadeOut="2500" Duration="0"/>
+   <ChannelGroupsVal>2,255,3,255,4,255,5,255</ChannelGroupsVal>
+   <FixtureVal ID="0">2,255,3,255,4,255,5,255</FixtureVal>
+   <FixtureVal ID="1">2,255,3,255,4,255,5,255</FixtureVal>
+   <FixtureVal ID="2">2,255,3,255,4,255,5,255</FixtureVal>
+   <FixtureVal ID="3">2,255,3,255,4,255,5,255</FixtureVal>
+   <FixtureVal ID="4">2,255,3,255,4,255,5,255</FixtureVal>
+   <FixtureVal ID="5">2,255,3,255,4,255,5,255</FixtureVal>
+   <FixtureVal ID="6">2,255,3,255,4,255,5,255</FixtureVal>
+   <FixtureVal ID="7">2,255,3,255,4,255,5,255</FixtureVal>
+  </Function>
+  <Function ID="3" Type="RGBMatrix" Name="Color effect: Sunset">
+   <Speed FadeIn="125" FadeOut="125" Duration="125"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Gradient</Algorithm>
+   <MonoColor>4294901760</MonoColor>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
+   <Property Name="presetSize" Value="8"/>
+   <Property Name="presetIndex" Value="Sunset"/>
   </Function>
   <Function ID="4" Type="Scene" Name="Color: Black">
    <Speed FadeIn="2500" FadeOut="2500" Duration="0"/>
@@ -370,6 +394,18 @@
    <Step Number="13" FadeIn="0" Hold="0" FadeOut="0">18</Step>
    <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">19</Step>
   </Function>
+  <Function ID="21" Type="RGBMatrix" Name="Color effect: Colorful">
+   <Speed FadeIn="150" FadeOut="150" Duration="150"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Gradient</Algorithm>
+   <MonoColor>4294901760</MonoColor>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
+   <Property Name="orientation" Value="Radial"/>
+   <Property Name="presetSize" Value="8"/>
+   <Property Name="presetIndex" Value="Abstract"/>
+  </Function>
   <Function ID="25" Type="RGBMatrix" Name="Dimmer effect: Fill (from center, once)">
    <Speed FadeIn="200" FadeOut="200" Duration="5000"/>
    <Direction>Backward</Direction>
@@ -570,8 +606,8 @@
    <FixtureVal ID="6">0,0</FixtureVal>
    <FixtureVal ID="7">0,0</FixtureVal>
   </Function>
-  <Function ID="53" Type="Collection" Name="Show: Rainbow waves">
-   <Step Number="0">109</Step>
+  <Function ID="53" Type="Collection" Name="Show: Color waves">
+   <Step Number="0">21</Step>
    <Step Number="1">27</Step>
    <Step Number="2">133</Step>
   </Function>
@@ -656,22 +692,7 @@
    <FixtureVal ID="6">1,74</FixtureVal>
    <FixtureVal ID="7">1,74</FixtureVal>
   </Function>
-  <Function ID="64" Type="Collection" Name="Show: Posh">
-   <Step Number="0">125</Step>
-   <Step Number="1">109</Step>
-   <Step Number="2">27</Step>
-  </Function>
-  <Function ID="65" Type="RGBMatrix" Name="Copy of Dimmer effect: Bubbles" BlendMode="Mask">
-   <Speed FadeIn="0" FadeOut="0" Duration="545"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Snow or Bubbles</Algorithm>
-   <MonoColor>4294967295</MonoColor>
-   <ControlMode>Dimmer</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-   <Property Name="presetflakes" Value="20"/>
-  </Function>
-  <Function ID="95" Type="RGBMatrix" Name="Color effect: Police (horizontal)">
+  <Function ID="95" Type="RGBMatrix" Name="Color effect: Red &amp; Blue (horizontal)">
    <Speed FadeIn="200" FadeOut="200" Duration="400"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
@@ -679,22 +700,12 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Red"/>
-   <Property Name="align" Value="Left"/>
+   <Property Name="color2Index" Value="Electric Blue"/>
+   <Property Name="offset" Value="0"/>
    <Property Name="blockSize" Value="2"/>
    <Property Name="orientation" Value="Interleaved"/>
-   <Property Name="offset" Value="0"/>
-   <Property Name="color2Index" Value="Electric Blue"/>
-  </Function>
-  <Function ID="102" Type="RGBMatrix" Name="Animation Fill - LED" BlendMode="Mask">
-   <Speed FadeIn="0" FadeOut="0" Duration="347"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Fill</Algorithm>
-   <MonoColor>4294967295</MonoColor>
-   <ControlMode>Dimmer</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-   <Property Name="orientation" Value="Horizontal Reversed"/>
+   <Property Name="align" Value="Left"/>
+   <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="103" Type="RGBMatrix" Name="Dimmer effect: Fill (from center, pingpong)">
    <Speed FadeIn="200" FadeOut="200" Duration="5000"/>
@@ -703,15 +714,6 @@
    <Algorithm Type="Script">Fill From Center</Algorithm>
    <MonoColor>4286743170</MonoColor>
    <EndColor>4294967295</EndColor>
-   <ControlMode>Dimmer</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
-  <Function ID="104" Type="RGBMatrix" Name="Animation Fill Unfill - LED" BlendMode="Mask">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Fill Unfill</Algorithm>
-   <MonoColor>4294967295</MonoColor>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>0</FixtureGroup>
   </Function>
@@ -724,31 +726,8 @@
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>0</FixtureGroup>
   </Function>
-  <Function ID="107" Type="RGBMatrix" Name="Animation Fireworks - LED" BlendMode="Mask">
-   <Speed FadeIn="0" FadeOut="0" Duration="545"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Fireworks</Algorithm>
-   <MonoColor>4294967295</MonoColor>
-   <ControlMode>Dimmer</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-   <Property Name="particleCount" Value="11"/>
-   <Property Name="particleSteps" Value="15"/>
-   <Property Name="rocketCount" Value="3"/>
-  </Function>
-  <Function ID="108" Type="RGBMatrix" Name="Animation Flying Objects - LED" BlendMode="Mask">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Waves</Algorithm>
-   <MonoColor>4294967295</MonoColor>
-   <ControlMode>Dimmer</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-   <Property Name="taillength" Value="50"/>
-   <Property Name="tailfade" Value="Yes"/>
-  </Function>
   <Function ID="109" Type="RGBMatrix" Name="Color effect: Rainbow">
-   <Speed FadeIn="60" FadeOut="60" Duration="60"/>
+   <Speed FadeIn="125" FadeOut="125" Duration="125"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -766,15 +745,6 @@
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>0</FixtureGroup>
    <Property Name="noisePercentage" Value="High"/>
-  </Function>
-  <Function ID="113" Type="RGBMatrix" Name="Animation One By One - LED">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">One By One</Algorithm>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
   </Function>
   <Function ID="114" Type="RGBMatrix" Name="Dimmer effect: Opposites" BlendMode="Subtractive">
    <Speed FadeIn="200" FadeOut="200" Duration="5000"/>
@@ -794,22 +764,13 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="stepsize" Value="36"/>
-   <Property Name="ramp" Value="15"/>
-   <Property Name="color3Index" Value="Green"/>
-   <Property Name="presetSize" Value="5"/>
    <Property Name="color2Index" Value="Red"/>
+   <Property Name="color4Index" Value="Blue"/>
+   <Property Name="presetSize" Value="6"/>
    <Property Name="color5Index" Value="Hot Pink"/>
-  </Function>
-  <Function ID="121" Type="RGBMatrix" Name="Animation Random Pixel Per Row - LED">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Random Pixel Per Row</Algorithm>
-   <MonoColor>4294901760</MonoColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>1</FixtureGroup>
+   <Property Name="ramp" Value="15"/>
+   <Property Name="stepsize" Value="36"/>
+   <Property Name="color3Index" Value="Green"/>
   </Function>
   <Function ID="124" Type="RGBMatrix" Name="Dimmer effect: Random spot" BlendMode="Mask">
    <Speed FadeIn="0" FadeOut="0" Duration="5000"/>
@@ -832,32 +793,12 @@
    <Property Name="windchill" Value="No"/>
    <Property Name="presetflakes" Value="20"/>
   </Function>
-  <Function ID="127" Type="RGBMatrix" Name="Animation Squares From Center - LED" BlendMode="Mask">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Squares From Center</Algorithm>
-   <MonoColor>4294967295</MonoColor>
-   <ControlMode>Dimmer</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-  </Function>
   <Function ID="129" Type="RGBMatrix" Name="Dimmer effect: Jumping ball (horizontal)" BlendMode="Mask">
    <Speed FadeIn="120" FadeOut="120" Duration="5000"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Stripes</Algorithm>
    <MonoColor>4294967295</MonoColor>
-   <ControlMode>Dimmer</ControlMode>
-   <FixtureGroup>0</FixtureGroup>
-   <Property Name="orientation" Value="Horizontal"/>
-  </Function>
-  <Function ID="130" Type="RGBMatrix" Name="Animation Stripes From Center - LED">
-   <Speed FadeIn="200" FadeOut="200" Duration="400"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Stripes From Center</Algorithm>
-   <MonoColor>4294967295</MonoColor>
-   <EndColor>4278190080</EndColor>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>0</FixtureGroup>
    <Property Name="orientation" Value="Horizontal"/>
@@ -870,8 +811,8 @@
    <MonoColor>4294967295</MonoColor>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="taillength" Value="50"/>
    <Property Name="tailfade" Value="Yes"/>
+   <Property Name="taillength" Value="50"/>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Roboto,6,-1,5,25,0,0,0,0,0</Font>
@@ -1139,7 +1080,7 @@
      <ShowEnableButton>False</ShowEnableButton>
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
-     <Button Caption="Police" ID="78" Icon="">
+     <Button Caption="Red &amp; Blue" ID="78" Icon="">
       <WindowState Visible="True" X="5" Y="90" Width="135" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
@@ -1166,7 +1107,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Ocean" ID="4" Icon="">
-      <WindowState Visible="True" X="140" Y="40" Width="135" Height="50"/>
+      <WindowState Visible="True" X="275" Y="40" Width="135" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1179,7 +1120,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="Plasma" ID="70" Icon="">
-      <WindowState Visible="True" X="5" Y="40" Width="135" Height="50"/>
+      <WindowState Visible="True" X="140" Y="40" Width="135" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1188,6 +1129,32 @@
        <Font>Default</Font>
       </Appearance>
       <Function ID="116"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="All colors" ID="72" Icon="">
+      <WindowState Visible="True" X="5" Y="40" Width="135" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="21"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Sunset" ID="74" Icon="">
+      <WindowState Visible="True" X="275" Y="90" Width="135" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="3"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
@@ -1774,24 +1741,6 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Multipage PagesNum="3" CurrentPage="0"/>
-    <Shortcut Page="0" Name="MAIN"/>
-    <Shortcut Page="1" Name="POSH"/>
-    <Shortcut Page="2" Name="SOUND SENSE"/>
-    <PagesLoop>True</PagesLoop>
-    <Button Caption="Posh (audio)" ID="17" Page="1" Icon="">
-     <WindowState Visible="False" X="5" Y="40" Width="210" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
     <Button Caption="STOP" ID="60" Icon="">
      <WindowState Visible="True" X="215" Y="140" Width="210" Height="50"/>
      <Appearance>
@@ -1831,7 +1780,7 @@
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
     </Button>
-    <Button Caption="Rainbow waves" ID="23" Icon="">
+    <Button Caption="Color waves" ID="23" Icon="">
      <WindowState Visible="True" X="215" Y="40" Width="210" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
@@ -1842,19 +1791,6 @@
      </Appearance>
      <Function ID="53"/>
      <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="STOP" ID="41" Page="1" Icon="">
-     <WindowState Visible="False" X="5" Y="90" Width="210" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="4294967295"/>
-     <Action FadeOut="300">StopAll</Action>
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="Police chase" ID="42" Icon="">
@@ -1870,16 +1806,19 @@
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
     </Button>
-    <AudioTriggers BarsNumber="5" Caption="Automatic sound sensing" ID="3" Page="2">
-     <WindowState Visible="False" X="5" Y="40" Width="355" Height="160"/>
+    <Button Caption="White Flash" ID="68" Icon="">
+     <WindowState Visible="True" X="5" Y="140" Width="210" Height="50"/>
      <Appearance>
-      <FrameStyle>Sunken</FrameStyle>
+      <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4288716960</BackgroundColor>
+      <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-    </AudioTriggers>
+     <Function ID="2"/>
+     <Action Override="0" ForceLTP="0">Flash</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
    </SoloFrame>
   </Frame>
   <Properties>
@@ -1892,14 +1831,14 @@
    <CueStack ID="0">
     <Speed FadeIn="0" FadeOut="0" Duration="4294967295"/>
     <Cue Name="Lights on">
-     <Value Channel="2">0</Value>
-     <Value Channel="1">0</Value>
-     <Value Channel="0">0</Value>
-     <Value Channel="7">0</Value>
      <Value Channel="6">0</Value>
-     <Value Channel="5">0</Value>
+     <Value Channel="7">0</Value>
      <Value Channel="4">0</Value>
+     <Value Channel="5">0</Value>
+     <Value Channel="2">0</Value>
      <Value Channel="3">0</Value>
+     <Value Channel="0">0</Value>
+     <Value Channel="1">0</Value>
      <Speed FadeIn="2000" FadeOut="0" Duration="4294967294"/>
     </Cue>
    </CueStack>
