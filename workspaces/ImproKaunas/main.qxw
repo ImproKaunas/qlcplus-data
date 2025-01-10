@@ -140,12 +140,12 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="orientation" Value="Vertical"/>
-   <Property Name="color1Index" Value="Red"/>
-   <Property Name="offset" Value="0"/>
-   <Property Name="color2Index" Value="Dim Blue"/>
-   <Property Name="align" Value="Left"/>
    <Property Name="blockSize" Value="1"/>
+   <Property Name="offset" Value="0"/>
+   <Property Name="color1Index" Value="Red"/>
+   <Property Name="align" Value="Left"/>
+   <Property Name="orientation" Value="Vertical"/>
+   <Property Name="color2Index" Value="Dim Blue"/>
   </Function>
   <Function ID="1" Type="RGBMatrix" Name="Color effect: Ocean">
    <Speed FadeIn="125" FadeOut="125" Duration="125"/>
@@ -155,8 +155,8 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="presetSize" Value="8"/>
    <Property Name="presetIndex" Value="Ocean"/>
+   <Property Name="presetSize" Value="8"/>
   </Function>
   <Function ID="2" Type="Scene" Name="Color: White Bright (warm)">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -178,8 +178,8 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="presetSize" Value="8"/>
    <Property Name="presetIndex" Value="Sunset"/>
+   <Property Name="presetSize" Value="8"/>
   </Function>
   <Function ID="4" Type="Scene" Name="Color: Black">
    <Speed FadeIn="2000" FadeOut="0" Duration="0"/>
@@ -402,9 +402,9 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="presetIndex" Value="Abstract"/>
    <Property Name="presetSize" Value="7"/>
    <Property Name="orientation" Value="Radial"/>
-   <Property Name="presetIndex" Value="Abstract"/>
   </Function>
   <Function ID="22" Type="Scene" Name="Color: White Bright (cold)">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -457,9 +457,9 @@
    <Direction>Forward</Direction>
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="PerStep" FadeOut="Common" Duration="PerStep"/>
-   <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0">44</Step>
-   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">19</Step>
-   <Step Number="2" FadeIn="7000" Hold="0" FadeOut="4294967294">58</Step>
+   <Step Number="0" FadeIn="1000" Hold="0" FadeOut="0">19</Step>
+   <Step Number="1" FadeIn="5000" Hold="1000" FadeOut="4294967294">37</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="4294967294">58</Step>
   </Function>
   <Function ID="32" Type="Scene" Name="Dimmer: 100% (Copy)" Hidden="True">
    <Speed FadeIn="300" FadeOut="300" Duration="0"/>
@@ -651,9 +651,9 @@
    <Step Number="2">114</Step>
   </Function>
   <Function ID="58" Type="RGBMatrix" Name="Dimmer effect: None">
-   <Speed FadeIn="0" FadeOut="0" Duration="5000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
-   <RunOrder>SingleShot</RunOrder>
+   <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
    <MonoColor>4294967295</MonoColor>
    <ControlMode>Dimmer</ControlMode>
@@ -720,19 +720,19 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="orientation" Value="Interleaved"/>
-   <Property Name="color1Index" Value="Red"/>
-   <Property Name="offset" Value="0"/>
-   <Property Name="color2Index" Value="Dim Blue"/>
-   <Property Name="align" Value="Left"/>
    <Property Name="blockSize" Value="2"/>
+   <Property Name="offset" Value="0"/>
+   <Property Name="color1Index" Value="Red"/>
+   <Property Name="align" Value="Left"/>
+   <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color2Index" Value="Dim Blue"/>
   </Function>
   <Function ID="103" Type="RGBMatrix" Name="Dimmer effect: Fill (from center, pingpong)">
    <Speed FadeIn="500" FadeOut="500" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <Algorithm Type="Script">Fill From Center</Algorithm>
-   <MonoColor>4286743170</MonoColor>
+   <MonoColor>4286677377</MonoColor>
    <EndColor>4294967295</EndColor>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>0</FixtureGroup>
@@ -766,13 +766,12 @@
    <FixtureGroup>0</FixtureGroup>
    <Property Name="noisePercentage" Value="High"/>
   </Function>
-  <Function ID="114" Type="RGBMatrix" Name="Dimmer effect: Opposites" BlendMode="Subtractive">
+  <Function ID="114" Type="RGBMatrix" Name="Dimmer effect: Opposites" BlendMode="Mask">
    <Speed FadeIn="500" FadeOut="500" Duration="500"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Squares From Center</Algorithm>
    <MonoColor>4294967295</MonoColor>
-   <EndColor>4294967295</EndColor>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>0</FixtureGroup>
   </Function>
@@ -785,11 +784,11 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
    <Property Name="color5Index" Value="Hot Pink"/>
-   <Property Name="stepsize" Value="36"/>
-   <Property Name="presetSize" Value="6"/>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="color3Index" Value="Green"/>
    <Property Name="ramp" Value="15"/>
+   <Property Name="color4Index" Value="Blue"/>
+   <Property Name="presetSize" Value="6"/>
+   <Property Name="color3Index" Value="Green"/>
+   <Property Name="stepsize" Value="36"/>
    <Property Name="color2Index" Value="Red"/>
   </Function>
   <Function ID="124" Type="RGBMatrix" Name="Dimmer effect: Random spot" BlendMode="Mask">
@@ -809,8 +808,8 @@
    <MonoColor>4294967295</MonoColor>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="windchill" Value="No"/>
    <Property Name="multiColor" Value="No"/>
+   <Property Name="windchill" Value="No"/>
    <Property Name="presetflakes" Value="20"/>
   </Function>
   <Function ID="129" Type="RGBMatrix" Name="Dimmer effect: Jumping ball (horizontal)" BlendMode="Mask">
@@ -831,10 +830,10 @@
    <MonoColor>4294967295</MonoColor>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="direction" Value="Right"/>
-   <Property Name="taillength" Value="100"/>
-   <Property Name="orientation" Value="Horizontal"/>
    <Property Name="tailfade" Value="Yes"/>
+   <Property Name="direction" Value="Right"/>
+   <Property Name="orientation" Value="Horizontal"/>
+   <Property Name="taillength" Value="100"/>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Roboto,6,-1,5,25,0,0,0,0,0</Font>
@@ -868,9 +867,9 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="345" Y="5" Width="210" Height="245"/>
-    <AllowChildren>False</AllowChildren>
-    <AllowResize>False</AllowResize>
+    <WindowState Visible="True" X="345" Y="5" Width="425" Height="395"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>False</ShowEnableButton>
     <Mixing>False</Mixing>
@@ -1087,6 +1086,100 @@
      <Key>Alt+W</Key>
      <Intensity Adjust="False">100</Intensity>
     </Button>
+    <Frame Caption="DYNAMIC COLOR" ID="21">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4288321942</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="0" Y="250" Width="425" Height="145"/>
+     <AllowChildren>False</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>False</ShowEnableButton>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="Red &amp; Blue" ID="78" Icon="">
+      <WindowState Visible="True" X="5" Y="90" Width="135" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294374900</ForegroundColor>
+       <BackgroundColor>4284374116</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="0"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Rainbow" ID="69" Icon="">
+      <WindowState Visible="True" X="140" Y="90" Width="135" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294374900</ForegroundColor>
+       <BackgroundColor>4284374116</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="109"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Ocean" ID="4" Icon="">
+      <WindowState Visible="True" X="275" Y="40" Width="135" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294374900</ForegroundColor>
+       <BackgroundColor>4284374116</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="1"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Plasma" ID="70" Icon="">
+      <WindowState Visible="True" X="140" Y="40" Width="135" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294374900</ForegroundColor>
+       <BackgroundColor>4284374116</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="116"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="All Colors" ID="72" Icon="">
+      <WindowState Visible="True" X="5" Y="40" Width="135" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294374900</ForegroundColor>
+       <BackgroundColor>4284374116</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="21"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="Sunset" ID="74" Icon="">
+      <WindowState Visible="True" X="275" Y="90" Width="135" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>4294374900</ForegroundColor>
+       <BackgroundColor>4284374116</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="3"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </Frame>
    </SoloFrame>
    <SoloFrame Caption="DIMMER" ID="1">
     <Appearance>
@@ -1457,32 +1550,6 @@
      <Action>StopAll</Action>
      <Intensity Adjust="False">100</Intensity>
     </Button>
-    <Button Caption="Fade in to white" ID="19" Icon="">
-     <WindowState Visible="True" X="5" Y="40" Width="210" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>4294374900</ForegroundColor>
-      <BackgroundColor>4284374116</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="31"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Fade out to black" ID="22" Icon="">
-     <WindowState Visible="True" X="5" Y="90" Width="210" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>4294374900</ForegroundColor>
-      <BackgroundColor>4284374116</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="54"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
     <Button Caption="Color Waves" ID="23" Icon="">
      <WindowState Visible="True" X="215" Y="40" Width="210" Height="50"/>
      <Appearance>
@@ -1748,100 +1815,32 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
    </SoloFrame>
-   <Frame Caption="DYNAMIC COLOR" ID="21">
+   <Button Caption="Fade in to white" ID="19" Icon="">
+    <WindowState Visible="True" X="350" Y="445" Width="210" Height="50"/>
     <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>4288321942</BackgroundColor>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>4294374900</ForegroundColor>
+     <BackgroundColor>4284374116</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="345" Y="255" Width="425" Height="145"/>
-    <AllowChildren>False</AllowChildren>
-    <AllowResize>False</AllowResize>
-    <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>False</ShowEnableButton>
-    <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
-    <Button Caption="Red &amp; Blue" ID="78" Icon="">
-     <WindowState Visible="True" X="5" Y="90" Width="135" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>4294374900</ForegroundColor>
-      <BackgroundColor>4284374116</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="0"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Rainbow" ID="69" Icon="">
-     <WindowState Visible="True" X="140" Y="90" Width="135" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>4294374900</ForegroundColor>
-      <BackgroundColor>4284374116</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="109"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Ocean" ID="4" Icon="">
-     <WindowState Visible="True" X="275" Y="40" Width="135" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>4294374900</ForegroundColor>
-      <BackgroundColor>4284374116</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="1"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Plasma" ID="70" Icon="">
-     <WindowState Visible="True" X="140" Y="40" Width="135" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>4294374900</ForegroundColor>
-      <BackgroundColor>4284374116</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="116"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="All Colors" ID="72" Icon="">
-     <WindowState Visible="True" X="5" Y="40" Width="135" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>4294374900</ForegroundColor>
-      <BackgroundColor>4284374116</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="21"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-    <Button Caption="Sunset" ID="74" Icon="">
-     <WindowState Visible="True" X="275" Y="90" Width="135" Height="50"/>
-     <Appearance>
-      <FrameStyle>None</FrameStyle>
-      <ForegroundColor>4294374900</ForegroundColor>
-      <BackgroundColor>4284374116</BackgroundColor>
-      <BackgroundImage>None</BackgroundImage>
-      <Font>Default</Font>
-     </Appearance>
-     <Function ID="3"/>
-     <Action>Toggle</Action>
-     <Intensity Adjust="False">100</Intensity>
-    </Button>
-   </Frame>
+    <Function ID="31"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="Fade out to black" ID="22" Icon="">
+    <WindowState Visible="True" X="350" Y="495" Width="210" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>4294374900</ForegroundColor>
+     <BackgroundColor>4284374116</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="54"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
   </Frame>
   <Properties>
    <Size Width="775" Height="615"/>
@@ -1853,14 +1852,14 @@
    <CueStack ID="0">
     <Speed FadeIn="0" FadeOut="0" Duration="4294967295"/>
     <Cue Name="">
-     <Value Channel="5">0</Value>
-     <Value Channel="4">0</Value>
-     <Value Channel="7">0</Value>
-     <Value Channel="6">0</Value>
-     <Value Channel="1">0</Value>
-     <Value Channel="0">0</Value>
-     <Value Channel="3">0</Value>
      <Value Channel="2">0</Value>
+     <Value Channel="3">0</Value>
+     <Value Channel="0">0</Value>
+     <Value Channel="1">0</Value>
+     <Value Channel="6">0</Value>
+     <Value Channel="7">0</Value>
+     <Value Channel="4">0</Value>
+     <Value Channel="5">0</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
    </CueStack>
