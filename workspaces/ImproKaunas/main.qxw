@@ -9,7 +9,7 @@
  <Engine>
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
-   <Universe Name="Impro Kaunas" ID="0" Passthrough="True">
+   <Universe Name="IMPRO Kaunas" ID="0" Passthrough="True">
     <Input Plugin="E1.31" Line="0">
      <PluginParameters multicast="0" ucastPort="5568" universe="1"/>
     </Input>
@@ -20,20 +20,8 @@
    <Manufacturer>Flash-Butrym</Manufacturer>
    <Model>LED PAR 64 SLIM 24x3W RGBW</Model>
    <Mode>8 Channel</Mode>
-   <ID>0</ID>
-   <Name>1</Name>
-   <Universe>0</Universe>
-   <Address>0</Address>
-   <Channels>8</Channels>
-   <ExcludeFade>6,7</ExcludeFade>
-   <ForcedLTP>0,2,3,4,5</ForcedLTP>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Flash-Butrym</Manufacturer>
-   <Model>LED PAR 64 SLIM 24x3W RGBW</Model>
-   <Mode>8 Channel</Mode>
    <ID>1</ID>
-   <Name>2</Name>
+   <Name>1</Name>
    <Universe>0</Universe>
    <Address>8</Address>
    <Channels>8</Channels>
@@ -45,7 +33,7 @@
    <Model>LED PAR 64 SLIM 24x3W RGBW</Model>
    <Mode>8 Channel</Mode>
    <ID>2</ID>
-   <Name>3</Name>
+   <Name>2</Name>
    <Universe>0</Universe>
    <Address>16</Address>
    <Channels>8</Channels>
@@ -57,7 +45,7 @@
    <Model>LED PAR 64 SLIM 24x3W RGBW</Model>
    <Mode>8 Channel</Mode>
    <ID>3</ID>
-   <Name>4</Name>
+   <Name>3</Name>
    <Universe>0</Universe>
    <Address>24</Address>
    <Channels>8</Channels>
@@ -69,7 +57,7 @@
    <Model>LED PAR 64 SLIM 24x3W RGBW</Model>
    <Mode>8 Channel</Mode>
    <ID>4</ID>
-   <Name>5</Name>
+   <Name>4</Name>
    <Universe>0</Universe>
    <Address>32</Address>
    <Channels>8</Channels>
@@ -81,7 +69,7 @@
    <Model>LED PAR 64 SLIM 24x3W RGBW</Model>
    <Mode>8 Channel</Mode>
    <ID>5</ID>
-   <Name>6</Name>
+   <Name>5</Name>
    <Universe>0</Universe>
    <Address>40</Address>
    <Channels>8</Channels>
@@ -93,7 +81,7 @@
    <Model>LED PAR 64 SLIM 24x3W RGBW</Model>
    <Mode>8 Channel</Mode>
    <ID>6</ID>
-   <Name>7</Name>
+   <Name>6</Name>
    <Universe>0</Universe>
    <Address>48</Address>
    <Channels>8</Channels>
@@ -105,7 +93,7 @@
    <Model>LED PAR 64 SLIM 24x3W RGBW</Model>
    <Mode>8 Channel</Mode>
    <ID>7</ID>
-   <Name>8</Name>
+   <Name>7</Name>
    <Universe>0</Universe>
    <Address>56</Address>
    <Channels>8</Channels>
@@ -115,7 +103,6 @@
   <FixtureGroup ID="0">
    <Name>Overhead RGBW, all</Name>
    <Size X="8" Y="2"/>
-   <Head X="0" Y="0" Fixture="0">0</Head>
    <Head X="2" Y="0" Fixture="1">0</Head>
    <Head X="4" Y="0" Fixture="2">0</Head>
    <Head X="6" Y="0" Fixture="3">0</Head>
@@ -124,14 +111,14 @@
    <Head X="5" Y="1" Fixture="6">0</Head>
    <Head X="7" Y="1" Fixture="7">0</Head>
   </FixtureGroup>
-  <ChannelsGroup ID="0" Name="Dimmer" Value="0">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0</ChannelsGroup>
-  <ChannelsGroup ID="1" Name="Strobe" Value="0">0,1,1,1,2,1,3,1,4,1,5,1,6,1,7,1</ChannelsGroup>
-  <ChannelsGroup ID="2" Name="Red" Value="0">0,2,1,2,2,2,3,2,4,2,5,2,6,2,7,2</ChannelsGroup>
-  <ChannelsGroup ID="3" Name="Green" Value="0">0,3,1,3,2,3,3,3,4,3,5,3,6,3,7,3</ChannelsGroup>
-  <ChannelsGroup ID="4" Name="Blue" Value="0">0,4,1,4,2,4,3,4,4,4,5,4,6,4,7,4</ChannelsGroup>
-  <ChannelsGroup ID="5" Name="White" Value="0">0,5,1,5,2,5,3,5,4,5,5,5,6,5,7,5</ChannelsGroup>
-  <ChannelsGroup ID="6" Name="Macro" Value="0">0,6,1,6,2,6,3,6,4,6,5,6,6,6,7,6</ChannelsGroup>
-  <ChannelsGroup ID="7" Name="Color" Value="0">0,7,1,7,2,7,3,7,4,7,5,7,6,7,7,7</ChannelsGroup>
+  <ChannelsGroup ID="0" Name="Dimmer" Value="0">1,0,2,0,3,0,4,0,5,0,6,0,7,0</ChannelsGroup>
+  <ChannelsGroup ID="1" Name="Strobe" Value="0">1,1,2,1,3,1,4,1,5,1,6,1,7,1</ChannelsGroup>
+  <ChannelsGroup ID="2" Name="Red" Value="0">1,2,2,2,3,2,4,2,5,2,6,2,7,2</ChannelsGroup>
+  <ChannelsGroup ID="3" Name="Green" Value="0">1,3,2,3,3,3,4,3,5,3,6,3,7,3</ChannelsGroup>
+  <ChannelsGroup ID="4" Name="Blue" Value="0">1,4,2,4,3,4,4,4,5,4,6,4,7,4</ChannelsGroup>
+  <ChannelsGroup ID="5" Name="White" Value="0">1,5,2,5,3,5,4,5,5,5,6,5,7,5</ChannelsGroup>
+  <ChannelsGroup ID="6" Name="Macro" Value="0">1,6,2,6,3,6,4,6,5,6,6,6,7,6</ChannelsGroup>
+  <ChannelsGroup ID="7" Name="Color" Value="0">1,7,2,7,3,7,4,7,5,7,6,7,7,7</ChannelsGroup>
   <Function ID="0" Type="RGBMatrix" Name="Color effect: Red &amp; Blue (vertical)">
    <Speed FadeIn="200" FadeOut="200" Duration="400"/>
    <Direction>Forward</Direction>
@@ -140,11 +127,11 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="blockSize" Value="1"/>
-   <Property Name="offset" Value="0"/>
    <Property Name="color1Index" Value="Red"/>
+   <Property Name="blockSize" Value="1"/>
    <Property Name="align" Value="Left"/>
    <Property Name="orientation" Value="Vertical"/>
+   <Property Name="offset" Value="0"/>
    <Property Name="color2Index" Value="Dim Blue"/>
   </Function>
   <Function ID="1" Type="RGBMatrix" Name="Color effect: Ocean">
@@ -155,13 +142,12 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="presetIndex" Value="Ocean"/>
    <Property Name="presetSize" Value="8"/>
+   <Property Name="presetIndex" Value="Ocean"/>
   </Function>
   <Function ID="2" Type="Scene" Name="Color: White Bright (warm)">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>2,255,3,172,4,128,5,255</ChannelGroupsVal>
-   <FixtureVal ID="0">2,255,3,172,4,128,5,255</FixtureVal>
    <FixtureVal ID="1">2,255,3,172,4,128,5,255</FixtureVal>
    <FixtureVal ID="2">2,255,3,172,4,128,5,255</FixtureVal>
    <FixtureVal ID="3">2,255,3,172,4,128,5,255</FixtureVal>
@@ -178,13 +164,12 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="presetIndex" Value="Sunset"/>
    <Property Name="presetSize" Value="8"/>
+   <Property Name="presetIndex" Value="Sunset"/>
   </Function>
   <Function ID="4" Type="Scene" Name="Color: Black">
    <Speed FadeIn="2000" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>2,0,3,0,4,0,5,0</ChannelGroupsVal>
-   <FixtureVal ID="0">2,0,3,0,4,0,5,0</FixtureVal>
    <FixtureVal ID="1">2,0,3,0,4,0,5,0</FixtureVal>
    <FixtureVal ID="2">2,0,3,0,4,0,5,0</FixtureVal>
    <FixtureVal ID="3">2,0,3,0,4,0,5,0</FixtureVal>
@@ -196,7 +181,6 @@
   <Function ID="5" Type="Scene" Name="Color: Dark Blue">
    <Speed FadeIn="2000" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>5,0,2,0,3,0,4,255</ChannelGroupsVal>
-   <FixtureVal ID="0">2,0,3,0,4,255,5,0</FixtureVal>
    <FixtureVal ID="1">2,0,3,0,4,255,5,0</FixtureVal>
    <FixtureVal ID="2">2,0,3,0,4,255,5,0</FixtureVal>
    <FixtureVal ID="3">2,0,3,0,4,255,5,0</FixtureVal>
@@ -208,7 +192,6 @@
   <Function ID="6" Type="Scene" Name="Color: Light Blue">
    <Speed FadeIn="2000" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>2,0,4,255,3,0,5,128</ChannelGroupsVal>
-   <FixtureVal ID="0">2,0,3,0,4,255,5,128</FixtureVal>
    <FixtureVal ID="1">2,0,3,0,4,255,5,128</FixtureVal>
    <FixtureVal ID="2">2,0,3,0,4,255,5,128</FixtureVal>
    <FixtureVal ID="3">2,0,3,0,4,255,5,128</FixtureVal>
@@ -220,7 +203,6 @@
   <Function ID="7" Type="Scene" Name="Color: Dark Green">
    <Speed FadeIn="2000" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>5,0,2,0,3,192,4,0</ChannelGroupsVal>
-   <FixtureVal ID="0">2,0,3,192,4,0,5,0</FixtureVal>
    <FixtureVal ID="1">2,0,3,192,4,0,5,0</FixtureVal>
    <FixtureVal ID="2">2,0,3,192,4,0,5,0</FixtureVal>
    <FixtureVal ID="3">2,0,3,192,4,0,5,0</FixtureVal>
@@ -232,7 +214,6 @@
   <Function ID="8" Type="Scene" Name="Color: Dark Cyan">
    <Speed FadeIn="2000" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>2,0,3,112,4,112,5,0</ChannelGroupsVal>
-   <FixtureVal ID="0">2,0,3,112,4,112,5,0</FixtureVal>
    <FixtureVal ID="1">2,0,3,112,4,112,5,0</FixtureVal>
    <FixtureVal ID="2">2,0,3,112,4,112,5,0</FixtureVal>
    <FixtureVal ID="3">2,0,3,112,4,112,5,0</FixtureVal>
@@ -244,7 +225,6 @@
   <Function ID="9" Type="Scene" Name="Color: Light Green">
    <Speed FadeIn="2000" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>5,128,2,0,3,255,4,0</ChannelGroupsVal>
-   <FixtureVal ID="0">2,0,3,255,4,0,5,128</FixtureVal>
    <FixtureVal ID="1">2,0,3,255,4,0,5,128</FixtureVal>
    <FixtureVal ID="2">2,0,3,255,4,0,5,128</FixtureVal>
    <FixtureVal ID="3">2,0,3,255,4,0,5,128</FixtureVal>
@@ -256,7 +236,6 @@
   <Function ID="10" Type="Scene" Name="Color: White (cold)">
    <Speed FadeIn="2000" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>5,154,2,102,3,102,4,102</ChannelGroupsVal>
-   <FixtureVal ID="0">2,102,3,102,4,102,5,154</FixtureVal>
    <FixtureVal ID="1">2,102,3,102,4,102,5,154</FixtureVal>
    <FixtureVal ID="2">2,102,3,102,4,102,5,154</FixtureVal>
    <FixtureVal ID="3">2,102,3,102,4,102,5,154</FixtureVal>
@@ -268,7 +247,6 @@
   <Function ID="11" Type="Scene" Name="Color: Dark Red">
    <Speed FadeIn="2000" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>5,0,2,255,3,0,4,0</ChannelGroupsVal>
-   <FixtureVal ID="0">2,255,3,0,4,0,5,0</FixtureVal>
    <FixtureVal ID="1">2,255,3,0,4,0,5,0</FixtureVal>
    <FixtureVal ID="2">2,255,3,0,4,0,5,0</FixtureVal>
    <FixtureVal ID="3">2,255,3,0,4,0,5,0</FixtureVal>
@@ -280,7 +258,6 @@
   <Function ID="12" Type="Scene" Name="Color: Dark Magenta">
    <Speed FadeIn="2000" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>5,0,2,192,3,0,4,192</ChannelGroupsVal>
-   <FixtureVal ID="0">2,192,3,0,4,192,5,0</FixtureVal>
    <FixtureVal ID="1">2,192,3,0,4,192,5,0</FixtureVal>
    <FixtureVal ID="2">2,192,3,0,4,192,5,0</FixtureVal>
    <FixtureVal ID="3">2,192,3,0,4,192,5,0</FixtureVal>
@@ -292,7 +269,6 @@
   <Function ID="13" Type="Scene" Name="Color: Dark Yellow">
    <Speed FadeIn="2000" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>5,0,2,172,3,172,4,0</ChannelGroupsVal>
-   <FixtureVal ID="0">2,172,3,172,4,0,5,0</FixtureVal>
    <FixtureVal ID="1">2,172,3,172,4,0,5,0</FixtureVal>
    <FixtureVal ID="2">2,172,3,172,4,0,5,0</FixtureVal>
    <FixtureVal ID="3">2,172,3,172,4,0,5,0</FixtureVal>
@@ -304,7 +280,6 @@
   <Function ID="14" Type="Scene" Name="Color: Dark Gray">
    <Speed FadeIn="2000" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>5,0,2,92,3,92,4,92</ChannelGroupsVal>
-   <FixtureVal ID="0">2,92,3,92,4,92,5,0</FixtureVal>
    <FixtureVal ID="1">2,92,3,92,4,92,5,0</FixtureVal>
    <FixtureVal ID="2">2,92,3,92,4,92,5,0</FixtureVal>
    <FixtureVal ID="3">2,92,3,92,4,92,5,0</FixtureVal>
@@ -316,7 +291,6 @@
   <Function ID="15" Type="Scene" Name="Color: Light Gray">
    <Speed FadeIn="2000" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>5,70,2,170,3,170,4,100</ChannelGroupsVal>
-   <FixtureVal ID="0">2,170,3,170,4,100,5,70</FixtureVal>
    <FixtureVal ID="1">2,170,3,170,4,100,5,70</FixtureVal>
    <FixtureVal ID="2">2,170,3,170,4,100,5,70</FixtureVal>
    <FixtureVal ID="3">2,170,3,170,4,100,5,70</FixtureVal>
@@ -328,7 +302,6 @@
   <Function ID="16" Type="Scene" Name="Color: Light Red">
    <Speed FadeIn="2000" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>5,192,2,255,3,0,4,0</ChannelGroupsVal>
-   <FixtureVal ID="0">2,255,3,0,4,0,5,192</FixtureVal>
    <FixtureVal ID="1">2,255,3,0,4,0,5,192</FixtureVal>
    <FixtureVal ID="2">2,255,3,0,4,0,5,192</FixtureVal>
    <FixtureVal ID="3">2,255,3,0,4,0,5,192</FixtureVal>
@@ -340,7 +313,6 @@
   <Function ID="17" Type="Scene" Name="Color: Light Magenta">
    <Speed FadeIn="2000" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>5,128,2,170,3,0,4,170</ChannelGroupsVal>
-   <FixtureVal ID="0">2,170,3,0,4,170,5,128</FixtureVal>
    <FixtureVal ID="1">2,170,3,0,4,170,5,128</FixtureVal>
    <FixtureVal ID="2">2,170,3,0,4,170,5,128</FixtureVal>
    <FixtureVal ID="3">2,170,3,0,4,170,5,128</FixtureVal>
@@ -352,7 +324,6 @@
   <Function ID="18" Type="Scene" Name="Color: Light Yellow">
    <Speed FadeIn="2000" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>5,128,2,172,3,172,4,0</ChannelGroupsVal>
-   <FixtureVal ID="0">2,172,3,172,4,0,5,128</FixtureVal>
    <FixtureVal ID="1">2,172,3,172,4,0,5,128</FixtureVal>
    <FixtureVal ID="2">2,172,3,172,4,0,5,128</FixtureVal>
    <FixtureVal ID="3">2,172,3,172,4,0,5,128</FixtureVal>
@@ -364,7 +335,6 @@
   <Function ID="19" Type="Scene" Name="Color: White (warm)">
    <Speed FadeIn="2000" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>2,128,3,128,4,72,5,142</ChannelGroupsVal>
-   <FixtureVal ID="0">2,128,3,128,4,72,5,142</FixtureVal>
    <FixtureVal ID="1">2,128,3,128,4,72,5,142</FixtureVal>
    <FixtureVal ID="2">2,128,3,128,4,72,5,142</FixtureVal>
    <FixtureVal ID="3">2,128,3,128,4,72,5,142</FixtureVal>
@@ -402,14 +372,13 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="presetIndex" Value="Abstract"/>
    <Property Name="presetSize" Value="7"/>
+   <Property Name="presetIndex" Value="Abstract"/>
    <Property Name="orientation" Value="Radial"/>
   </Function>
   <Function ID="22" Type="Scene" Name="Color: White Bright (cold)">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>2,232,3,160,4,160,5,255</ChannelGroupsVal>
-   <FixtureVal ID="0">2,232,3,160,4,160,5,255</FixtureVal>
    <FixtureVal ID="1">2,232,3,160,4,160,5,255</FixtureVal>
    <FixtureVal ID="2">2,232,3,160,4,160,5,255</FixtureVal>
    <FixtureVal ID="3">2,232,3,160,4,160,5,255</FixtureVal>
@@ -421,7 +390,6 @@
   <Function ID="23" Type="Scene" Name="Color: White Brightest">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>2,255,3,255,4,255,5,255</ChannelGroupsVal>
-   <FixtureVal ID="0">2,255,3,255,4,255,5,255</FixtureVal>
    <FixtureVal ID="1">2,255,3,255,4,255,5,255</FixtureVal>
    <FixtureVal ID="2">2,255,3,255,4,255,5,255</FixtureVal>
    <FixtureVal ID="3">2,255,3,255,4,255,5,255</FixtureVal>
@@ -443,7 +411,6 @@
   <Function ID="27" Type="Scene" Name="Dimmer: 100%">
    <Speed FadeIn="5000" FadeOut="5000" Duration="20000"/>
    <ChannelGroupsVal>0,255</ChannelGroupsVal>
-   <FixtureVal ID="0">0,255</FixtureVal>
    <FixtureVal ID="1">0,255</FixtureVal>
    <FixtureVal ID="2">0,255</FixtureVal>
    <FixtureVal ID="3">0,255</FixtureVal>
@@ -464,7 +431,6 @@
   <Function ID="32" Type="Scene" Name="Dimmer: 100% (Copy)" Hidden="True">
    <Speed FadeIn="300" FadeOut="300" Duration="0"/>
    <ChannelGroupsVal>0,255</ChannelGroupsVal>
-   <FixtureVal ID="0">0,0</FixtureVal>
    <FixtureVal ID="1">0,0</FixtureVal>
    <FixtureVal ID="2">0,0</FixtureVal>
    <FixtureVal ID="3">0,0</FixtureVal>
@@ -476,7 +442,6 @@
   <Function ID="33" Type="Scene" Name="Dimmer: 100% (Copy)" Hidden="True">
    <Speed FadeIn="300" FadeOut="300" Duration="0"/>
    <ChannelGroupsVal>0,255</ChannelGroupsVal>
-   <FixtureVal ID="0">0,0</FixtureVal>
    <FixtureVal ID="1">0,0</FixtureVal>
    <FixtureVal ID="2">0,0</FixtureVal>
    <FixtureVal ID="3">0,0</FixtureVal>
@@ -488,7 +453,6 @@
   <Function ID="34" Type="Scene" Name="Dimmer: 100% (Copy)" Hidden="True">
    <Speed FadeIn="300" FadeOut="300" Duration="0"/>
    <ChannelGroupsVal>0,255</ChannelGroupsVal>
-   <FixtureVal ID="0">0,0</FixtureVal>
    <FixtureVal ID="1">0,0</FixtureVal>
    <FixtureVal ID="2">0,0</FixtureVal>
    <FixtureVal ID="3">0,0</FixtureVal>
@@ -500,7 +464,6 @@
   <Function ID="35" Type="Scene" Name="Dimmer: 90%">
    <Speed FadeIn="5000" FadeOut="5000" Duration="0"/>
    <ChannelGroupsVal>0,230</ChannelGroupsVal>
-   <FixtureVal ID="0">0,230</FixtureVal>
    <FixtureVal ID="1">0,230</FixtureVal>
    <FixtureVal ID="2">0,230</FixtureVal>
    <FixtureVal ID="3">0,230</FixtureVal>
@@ -512,7 +475,6 @@
   <Function ID="36" Type="Scene" Name="Dimmer: 80%">
    <Speed FadeIn="5000" FadeOut="5000" Duration="0"/>
    <ChannelGroupsVal>0,204</ChannelGroupsVal>
-   <FixtureVal ID="0">0,204</FixtureVal>
    <FixtureVal ID="1">0,204</FixtureVal>
    <FixtureVal ID="2">0,204</FixtureVal>
    <FixtureVal ID="3">0,204</FixtureVal>
@@ -524,7 +486,6 @@
   <Function ID="37" Type="Scene" Name="Dimmer: 70%">
    <Speed FadeIn="5000" FadeOut="5000" Duration="0"/>
    <ChannelGroupsVal>0,179</ChannelGroupsVal>
-   <FixtureVal ID="0">0,179</FixtureVal>
    <FixtureVal ID="1">0,179</FixtureVal>
    <FixtureVal ID="2">0,179</FixtureVal>
    <FixtureVal ID="3">0,179</FixtureVal>
@@ -536,7 +497,6 @@
   <Function ID="38" Type="Scene" Name="Dimmer: 60%">
    <Speed FadeIn="5000" FadeOut="5000" Duration="0"/>
    <ChannelGroupsVal>0,153</ChannelGroupsVal>
-   <FixtureVal ID="0">0,153</FixtureVal>
    <FixtureVal ID="1">0,153</FixtureVal>
    <FixtureVal ID="2">0,153</FixtureVal>
    <FixtureVal ID="3">0,153</FixtureVal>
@@ -548,7 +508,6 @@
   <Function ID="39" Type="Scene" Name="Dimmer: 50%">
    <Speed FadeIn="5000" FadeOut="5000" Duration="0"/>
    <ChannelGroupsVal>0,128</ChannelGroupsVal>
-   <FixtureVal ID="0">0,128</FixtureVal>
    <FixtureVal ID="1">0,128</FixtureVal>
    <FixtureVal ID="2">0,128</FixtureVal>
    <FixtureVal ID="3">0,128</FixtureVal>
@@ -560,7 +519,6 @@
   <Function ID="40" Type="Scene" Name="Dimmer: 40%">
    <Speed FadeIn="5000" FadeOut="5000" Duration="0"/>
    <ChannelGroupsVal>0,102</ChannelGroupsVal>
-   <FixtureVal ID="0">0,102</FixtureVal>
    <FixtureVal ID="1">0,102</FixtureVal>
    <FixtureVal ID="2">0,102</FixtureVal>
    <FixtureVal ID="3">0,102</FixtureVal>
@@ -572,7 +530,6 @@
   <Function ID="41" Type="Scene" Name="Dimmer: 30%">
    <Speed FadeIn="5000" FadeOut="5000" Duration="0"/>
    <ChannelGroupsVal>0,77</ChannelGroupsVal>
-   <FixtureVal ID="0">0,77</FixtureVal>
    <FixtureVal ID="1">0,77</FixtureVal>
    <FixtureVal ID="2">0,77</FixtureVal>
    <FixtureVal ID="3">0,77</FixtureVal>
@@ -584,7 +541,6 @@
   <Function ID="42" Type="Scene" Name="Dimmer: 20%">
    <Speed FadeIn="5000" FadeOut="5000" Duration="0"/>
    <ChannelGroupsVal>0,51</ChannelGroupsVal>
-   <FixtureVal ID="0">0,51</FixtureVal>
    <FixtureVal ID="1">0,51</FixtureVal>
    <FixtureVal ID="2">0,51</FixtureVal>
    <FixtureVal ID="3">0,51</FixtureVal>
@@ -596,7 +552,6 @@
   <Function ID="43" Type="Scene" Name="Dimmer: 10%">
    <Speed FadeIn="5000" FadeOut="5000" Duration="0"/>
    <ChannelGroupsVal>0,26</ChannelGroupsVal>
-   <FixtureVal ID="0">0,26</FixtureVal>
    <FixtureVal ID="1">0,26</FixtureVal>
    <FixtureVal ID="2">0,26</FixtureVal>
    <FixtureVal ID="3">0,26</FixtureVal>
@@ -608,7 +563,6 @@
   <Function ID="44" Type="Scene" Name="Dimmer: 0%">
    <Speed FadeIn="5000" FadeOut="5000" Duration="0"/>
    <ChannelGroupsVal>0,0</ChannelGroupsVal>
-   <FixtureVal ID="0">0,0</FixtureVal>
    <FixtureVal ID="1">0,0</FixtureVal>
    <FixtureVal ID="2">0,0</FixtureVal>
    <FixtureVal ID="3">0,0</FixtureVal>
@@ -619,7 +573,6 @@
   </Function>
   <Function ID="51" Type="Scene" Name="Show: Rainbow waves - 4" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="0">0,0</FixtureVal>
    <FixtureVal ID="1">0,0</FixtureVal>
    <FixtureVal ID="2">0,0</FixtureVal>
    <FixtureVal ID="3">0,0</FixtureVal>
@@ -663,7 +616,6 @@
   <Function ID="59" Type="Scene" Name="Strobe: Off">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>1,0</ChannelGroupsVal>
-   <FixtureVal ID="0">1,0</FixtureVal>
    <FixtureVal ID="1">1,0</FixtureVal>
    <FixtureVal ID="2">1,0</FixtureVal>
    <FixtureVal ID="3">1,0</FixtureVal>
@@ -679,7 +631,6 @@
   <Function ID="61" Type="Scene" Name="Strobe: Medium">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>1,175</ChannelGroupsVal>
-   <FixtureVal ID="0">1,175</FixtureVal>
    <FixtureVal ID="1">1,175</FixtureVal>
    <FixtureVal ID="2">1,175</FixtureVal>
    <FixtureVal ID="3">1,175</FixtureVal>
@@ -691,7 +642,6 @@
   <Function ID="62" Type="Scene" Name="Strobe: High">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>1,244</ChannelGroupsVal>
-   <FixtureVal ID="0">1,244</FixtureVal>
    <FixtureVal ID="1">1,244</FixtureVal>
    <FixtureVal ID="2">1,244</FixtureVal>
    <FixtureVal ID="3">1,244</FixtureVal>
@@ -703,7 +653,6 @@
   <Function ID="63" Type="Scene" Name="Strobe: Low">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>1,74</ChannelGroupsVal>
-   <FixtureVal ID="0">1,74</FixtureVal>
    <FixtureVal ID="1">1,74</FixtureVal>
    <FixtureVal ID="2">1,74</FixtureVal>
    <FixtureVal ID="3">1,74</FixtureVal>
@@ -720,11 +669,11 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="blockSize" Value="2"/>
-   <Property Name="offset" Value="0"/>
    <Property Name="color1Index" Value="Red"/>
+   <Property Name="blockSize" Value="2"/>
    <Property Name="align" Value="Left"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="offset" Value="0"/>
    <Property Name="color2Index" Value="Dim Blue"/>
   </Function>
   <Function ID="103" Type="RGBMatrix" Name="Dimmer effect: Fill (from center, pingpong)">
@@ -783,12 +732,12 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color5Index" Value="Hot Pink"/>
-   <Property Name="ramp" Value="15"/>
-   <Property Name="color4Index" Value="Blue"/>
-   <Property Name="presetSize" Value="6"/>
-   <Property Name="color3Index" Value="Green"/>
    <Property Name="stepsize" Value="36"/>
+   <Property Name="color5Index" Value="Hot Pink"/>
+   <Property Name="presetSize" Value="6"/>
+   <Property Name="color4Index" Value="Blue"/>
+   <Property Name="color3Index" Value="Green"/>
+   <Property Name="ramp" Value="15"/>
    <Property Name="color2Index" Value="Red"/>
   </Function>
   <Function ID="124" Type="RGBMatrix" Name="Dimmer effect: Random spot" BlendMode="Mask">
@@ -808,9 +757,9 @@
    <MonoColor>4294967295</MonoColor>
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="multiColor" Value="No"/>
    <Property Name="windchill" Value="No"/>
    <Property Name="presetflakes" Value="20"/>
+   <Property Name="multiColor" Value="No"/>
   </Function>
   <Function ID="129" Type="RGBMatrix" Name="Dimmer effect: Jumping ball (horizontal)" BlendMode="Mask">
    <Speed FadeIn="400" FadeOut="400" Duration="400"/>
@@ -831,16 +780,15 @@
    <ControlMode>Dimmer</ControlMode>
    <FixtureGroup>0</FixtureGroup>
    <Property Name="tailfade" Value="Yes"/>
-   <Property Name="direction" Value="Right"/>
-   <Property Name="orientation" Value="Horizontal"/>
    <Property Name="taillength" Value="100"/>
+   <Property Name="orientation" Value="Horizontal"/>
+   <Property Name="direction" Value="Right"/>
   </Function>
-  <Monitor DisplayMode="0" ShowLabels="0">
+  <Monitor DisplayMode="1" ShowLabels="0">
    <Font>Roboto,6,-1,5,25,0,0,0,0,0</Font>
-   <ChannelStyle>0</ChannelStyle>
+   <ChannelStyle>1</ChannelStyle>
    <ValueStyle>0</ValueStyle>
    <Grid Width="5" Height="3" Depth="2" Units="0"/>
-   <FxItem ID="0" XPos="500" YPos="400"/>
    <FxItem ID="1" XPos="1500" YPos="400"/>
    <FxItem ID="2" XPos="2500" YPos="400"/>
    <FxItem ID="3" XPos="3500" YPos="400"/>
